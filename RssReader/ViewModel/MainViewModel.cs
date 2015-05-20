@@ -30,6 +30,7 @@ namespace RssReader.ViewModel
             using (var Stream = await client.GetStreamAsync(url)) {
                 XmlSerializer Serializer = new XmlSerializer(typeof(Rss));
                 this.Rss = Serializer.Deserialize(Stream) as Rss;
+                IsLoaded = true;
             }
         }
 

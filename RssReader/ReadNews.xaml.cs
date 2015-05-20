@@ -13,26 +13,19 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using RssReader.Model;
-using RssReader.ViewModel;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace RssReader
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class ReadNews : Page
     {
-
-        private MainViewModel model; 
-        public MainPage()
+        public ReadNews()
         {
             this.InitializeComponent();
-
-            this.NavigationCacheMode = NavigationCacheMode.Required;
-            model = new MainViewModel();
-            this.DataContext = model;
         }
 
         /// <summary>
@@ -42,19 +35,8 @@ namespace RssReader
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (!model.IsLoaded) {
-                model.LoadRss("http://careers.stackoverflow.com/jobs/feed");
-            }
+            Item item = e.Parameter as Item;
+            webview.Navigate(new Uri(item.link, UriKind.Absolute));
         }
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (listNews.SelectedItem != null) {
-                Item item = listNews.SelectedItem as Item;
-                Frame.Navigate(typeof(ReadNews), item);
-            }
-        }
-
-    
     }
 }

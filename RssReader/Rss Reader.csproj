@@ -90,6 +90,9 @@
     </Compile>
     <Compile Include="Model\Rss.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadNews.xaml.cs">
+      <DependentUpon>ReadNews.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +116,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ReadNews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

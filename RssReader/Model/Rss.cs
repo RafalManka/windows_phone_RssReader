@@ -16,6 +16,13 @@ namespace RssReader.Model
     }
 
     public class Channel {
+
+        [XmlElement("title")]
+        public string title { get; set; }
+
+        [XmlElement("description")]
+        public string description { get; set; }
+
         [XmlElement("item")]
         public ObservableCollection<Item> Items { get; set; }
 

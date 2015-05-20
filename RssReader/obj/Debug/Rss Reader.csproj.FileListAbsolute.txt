@@ -62,3 +62,8 @@ C:\Users\Rafal\Documents\Visual Studio 2013\Projects\RssFeed\RssReader\obj\Debug
 C:\Users\Rafal\Documents\Visual Studio 2013\Projects\RssFeed\RssReader\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Rafal\Documents\Visual Studio 2013\Projects\RssFeed\RssReader\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Rafal\Documents\Visual Studio 2013\Projects\RssFeed\RssReader\obj\Debug\ProjectArchitectures.txt
+C:\Users\Rafal\documents\visual studio 2013\Projects\RssFeed\RssReader\bin\Debug\ReadNews.xbf
+C:\Users\Rafal\documents\visual studio 2013\Projects\RssFeed\RssReader\obj\Debug\ReadNews.g.i.cs
+C:\Users\Rafal\documents\visual studio 2013\Projects\RssFeed\RssReader\obj\Debug\ReadNews.g.cs
+C:\Users\Rafal\documents\visual studio 2013\Projects\RssFeed\RssReader\obj\Debug\ReadNews.xaml
+C:\Users\Rafal\documents\visual studio 2013\Projects\RssFeed\RssReader\obj\Debug\ReadNews.xbf
