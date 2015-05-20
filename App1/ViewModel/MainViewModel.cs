@@ -12,7 +12,18 @@ namespace App1.ViewModel
 {
     class MainViewModel:INotifyPropertyChanged
     {
-        public Rss Rss { get; set; }
+        private Rss _rss;
+
+        public Rss Rss {
+            get {
+                return this._rss;
+            }
+
+            set {
+                this._rss = value;
+                NotifyPropertyChanged("Rss");
+            } 
+        }
         public bool IsLoaded { get; set; }
         public async void LoadRss(string url) {
             HttpClient client = new HttpClient();
